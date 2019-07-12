@@ -1,0 +1,479 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo.png" class="logo" alt="Logo" />
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#links" class="toc-h1 toc-link" data-title="Links">Links</a>
+          </li>
+          <li>
+            <a href="#champions" class="toc-h1 toc-link" data-title="Champions">Champions</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#classes" class="toc-h2 toc-link" data-title="Classes">Classes</a>
+                  </li>
+                  <li>
+                    <a href="#4fun" class="toc-h2 toc-link" data-title="4fun">4fun</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#items" class="toc-h1 toc-link" data-title="Items">Items</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#damage" class="toc-h2 toc-link" data-title="Damage">Damage</a>
+                  </li>
+                  <li>
+                    <a href="#armor" class="toc-h2 toc-link" data-title="Armor">Armor</a>
+                  </li>
+                  <li>
+                    <a href="#2fun" class="toc-h2 toc-link" data-title="2fun">2fun</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='#'>Yo. Updated 9.13</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='introduction'>Introduction</h1>
+<p>Welcome to TFT Help. If you&#39;re as lost or as confused as me, this will be a useful website to bookmark. </p>
+<h1 id='links'>Links</h1>
+<p>Hafu.</p>
+
+<ul>
+<li><a href="https://www.youtube.com/channel/UCddX-H9xUwQH6jOOHuL2vYw">Youtube</a></li>
+</ul>
+
+<p>Scarra.</p>
+
+<ul>
+<li><a href="https://i.imgur.com/PwHNFou.jpg">items</a></li>
+<li><a href="https://i.imgur.com/7wqGwwz.jpg">champions</a></li>
+<li><a href="https://www.youtube.com/user/scarraofficial">Youtube</a></li>
+</ul>
+
+<p>Disguised Toast.</p>
+
+<ul>
+<li><a href="https://www.youtube.com/channel/UCUT8RoNBTJvwW1iErP6-b-A">Youtube</a></li>
+</ul>
+
+<p>EsportsObserver.</p>
+
+<ul>
+<li><a href="https://images.squarespace-cdn.com/content/v1/59af2189c534a58c97bd63b3/1562019828121-XZBB10P4E71HKVGRKXTM/ke17ZwdGBToddI8pDm48kJGvfNC1aUK2wbtVI1QZfA57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UR5H7ucbaCh6ed8LHWsZBy-RaCZoInfaEpqKUEDgw8V5KL33-fhoxT1uJb4gA97vDg/Teamfight+Tactics+champion+pool+size+and+drop+rate.jpg?format=1500w">champion droprate</a></li>
+</ul>
+<h1 id='champions'>Champions</h1>
+<!---
+Cho'Gath |
+Draven |
+Gnar |
+Sejuani |
+Swain |
+Akali |
+Anivia |
+Brand |
+Leona |
+Miss Fortune |
+Nidalee |
+Pyke |
+Yasuo |
+Ahri |
+Ashe |
+Darius |
+Elise |
+Garen |
+Graves |
+Karthus |
+Kassadin |
+Kayle |
+Kennen |
+Kha'Zix |
+Kindred |
+Lissandra |
+Lulu |
+Morgana |
+Shyvana |
+Tristana |
+Vayne |
+Veigar |
+Volibear |
+Warwick |
+Zed |
+Aatrox |
+Blitzcrank |
+Braum |
+Katarina |
+Lucian |
+Rengar |
+Shen |
+Varus |
+Evelynn |
+Fiora |
+Gangplank |
+Mordekaiser |
+Poppy |
+Rek'Sai |
+include_cats | false | If set to true, the result will also include cats.
+available | true | If set to false, the result will include kittens that have already been adopted.
+
+--->
+<h2 id='classes'>Classes</h2>
+<table><thead>
+<tr>
+<th>Champion</th>
+<th>Class</th>
+<th>Subclass</th>
+<th>Sub-subclass</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Aurelion Sol</td>
+<td>Dragon</td>
+<td>Sorcerer</td>
+<td>None</td>
+</tr>
+</tbody></table>
+<h2 id='4fun'>4fun</h2>
+<table><thead>
+<tr>
+<th>Champion</th>
+<th>Class</th>
+<th>Subclass</th>
+<th>Sub-subclass</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Aurelion Sol</td>
+<td>Dragon</td>
+<td>Sorcerer</td>
+<td>None</td>
+</tr>
+</tbody></table>
+
+<!-- 
+### Aurelion Sol
+### Cho'Gath
+### Draven
+### Gnar
+### Sejuani
+### Swain
+### Akali
+### Anivia
+### Brand
+### Leona
+### Miss Fortune
+### Nidalee
+### Pyke
+### Yasuo
+## Ahri
+## Ashe
+## Darius
+## Elise
+## Garen
+## Graves
+## Karthus
+## Kassadin
+## Kayle
+## Kennen
+## Kha'Zix
+## Kindred
+## Lissandra
+## Lulu
+## Morgana
+## Shyvana
+## Tristana
+## Vayne
+## Veigar
+## Volibear
+## Warwick
+## Zed
+## Aatrox
+## Blitzcrank
+## Braum
+## Katarina
+## Lucian
+## Rengar
+## Shen
+## Varus
+## Evelynn
+## Fiora
+## Gangplank
+## Mordekaiser
+## Poppy
+## Rek'Sai
+-->
+<h1 id='items'>Items</h1><h2 id='damage'>Damage</h2>
+<table><thead>
+<tr>
+<th>Item</th>
+<th>Class</th>
+<th>Subclass</th>
+<th>Sub-subclass</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>B.F. Sword</td>
+<td>Dragon</td>
+<td>Sorcerer</td>
+<td>None</td>
+</tr>
+</tbody></table>
+<h2 id='armor'>Armor</h2>
+<table><thead>
+<tr>
+<th>Item</th>
+<th>Class</th>
+<th>Subclass</th>
+<th>Sub-subclass</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Chain Vest</td>
+<td>Dragon</td>
+<td>Sorcerer</td>
+<td>None</td>
+</tr>
+</tbody></table>
+<h2 id='2fun'>2fun</h2>
+<table><thead>
+<tr>
+<th>Item</th>
+<th>Class</th>
+<th>Subclass</th>
+<th>Sub-subclass</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Spatula</td>
+<td>Dragon</td>
+<td>Sorcerer</td>
+<td>None</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+      </div>
+    </div>
+  </body>
+</html>
