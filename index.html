@@ -199,6 +199,9 @@
     <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/print.css" rel="stylesheet" media="print" />
       <script src="javascripts/all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sortable/0.8.0/js/sortable.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sortable/0.8.0/css/sortable-theme-bootstrap.css" />
+
   </head>
 
   <body class="index" data-languages="[]">
@@ -219,32 +222,30 @@
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
           </li>
           <li>
-            <a href="#links" class="toc-h1 toc-link" data-title="Links">Links</a>
-          </li>
-          <li>
             <a href="#champions" class="toc-h1 toc-link" data-title="Champions">Champions</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#classes" class="toc-h2 toc-link" data-title="Classes">Classes</a>
+                    <a href="#tier-1" class="toc-h2 toc-link" data-title="Tier 1">Tier 1</a>
                   </li>
                   <li>
-                    <a href="#4fun" class="toc-h2 toc-link" data-title="4fun">4fun</a>
+                    <a href="#tier-2" class="toc-h2 toc-link" data-title="Tier 2">Tier 2</a>
+                  </li>
+                  <li>
+                    <a href="#tier-3" class="toc-h2 toc-link" data-title="Tier 3">Tier 3</a>
+                  </li>
+                  <li>
+                    <a href="#tier-4" class="toc-h2 toc-link" data-title="Tier 4">Tier 4</a>
+                  </li>
+                  <li>
+                    <a href="#tier-5" class="toc-h2 toc-link" data-title="Tier 5">Tier 5</a>
                   </li>
               </ul>
           </li>
           <li>
             <a href="#items" class="toc-h1 toc-link" data-title="Items">Items</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#damage" class="toc-h2 toc-link" data-title="Damage">Damage</a>
-                  </li>
-                  <li>
-                    <a href="#armor" class="toc-h2 toc-link" data-title="Armor">Armor</a>
-                  </li>
-                  <li>
-                    <a href="#2fun" class="toc-h2 toc-link" data-title="2fun">2fun</a>
-                  </li>
-              </ul>
+          </li>
+          <li>
+            <a href="#links" class="toc-h1 toc-link" data-title="Links">Links</a>
           </li>
       </ul>
         <ul class="toc-footer">
@@ -256,117 +257,380 @@
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
 <p>Welcome to TFT Help. If you&#39;re as lost or as confused as me, this will be a useful website to bookmark. </p>
-<h1 id='links'>Links</h1>
-<p>Hafu.</p>
-
-<ul>
-<li><a href="https://www.youtube.com/channel/UCddX-H9xUwQH6jOOHuL2vYw">Youtube</a></li>
-</ul>
-
-<p>Scarra.</p>
-
-<ul>
-<li><a href="https://i.imgur.com/PwHNFou.jpg">items</a></li>
-<li><a href="https://i.imgur.com/7wqGwwz.jpg">champions</a></li>
-<li><a href="https://www.youtube.com/user/scarraofficial">Youtube</a></li>
-</ul>
-
-<p>Disguised Toast.</p>
-
-<ul>
-<li><a href="https://www.youtube.com/channel/UCUT8RoNBTJvwW1iErP6-b-A">Youtube</a></li>
-</ul>
-
-<p>EsportsObserver.</p>
-
-<ul>
-<li><a href="https://images.squarespace-cdn.com/content/v1/59af2189c534a58c97bd63b3/1562019828121-XZBB10P4E71HKVGRKXTM/ke17ZwdGBToddI8pDm48kJGvfNC1aUK2wbtVI1QZfA57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UR5H7ucbaCh6ed8LHWsZBy-RaCZoInfaEpqKUEDgw8V5KL33-fhoxT1uJb4gA97vDg/Teamfight+Tactics+champion+pool+size+and+drop+rate.jpg?format=1500w">champion droprate</a></li>
-</ul>
 <h1 id='champions'>Champions</h1>
-<!---
-Cho'Gath |
-Draven |
-Gnar |
-Sejuani |
-Swain |
-Akali |
-Anivia |
-Brand |
-Leona |
-Miss Fortune |
-Nidalee |
-Pyke |
-Yasuo |
-Ahri |
-Ashe |
-Darius |
-Elise |
-Garen |
-Graves |
-Karthus |
-Kassadin |
-Kayle |
-Kennen |
-Kha'Zix |
-Kindred |
-Lissandra |
-Lulu |
-Morgana |
-Shyvana |
-Tristana |
-Vayne |
-Veigar |
-Volibear |
-Warwick |
-Zed |
-Aatrox |
-Blitzcrank |
-Braum |
-Katarina |
-Lucian |
-Rengar |
-Shen |
-Varus |
-Evelynn |
-Fiora |
-Gangplank |
-Mordekaiser |
-Poppy |
-Rek'Sai |
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
+<table class="sortable-theme-bootstrap" data-sortable>
 
---->
-<h2 id='classes'>Classes</h2>
+
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>
+<h2 id='tier-1'>Tier 1</h2>
 <table><thead>
 <tr>
 <th>Champion</th>
+<th>Origin</th>
+<th>Sub-Origin</th>
 <th>Class</th>
-<th>Subclass</th>
-<th>Sub-subclass</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>Aurelion Sol</td>
-<td>Dragon</td>
-<td>Sorcerer</td>
+<td>Darius</td>
+<td>Imperial</td>
 <td>None</td>
+<td>Knight</td>
+</tr>
+<tr>
+<td>Fiora</td>
+<td>Noble</td>
+<td>None</td>
+<td>Blademaster</td>
+</tr>
+<tr>
+<td>Garen</td>
+<td>Noble</td>
+<td>None</td>
+<td>Knight</td>
+</tr>
+<tr>
+<td>Graves</td>
+<td>Pirate</td>
+<td>None</td>
+<td>Gunslinger</td>
+</tr>
+<tr>
+<td>Kassadin</td>
+<td>Void</td>
+<td>None</td>
+<td>Sorcerer</td>
+</tr>
+<tr>
+<td>Kha&#39;Zix</td>
+<td>Void</td>
+<td>None</td>
+<td>Assassin</td>
+</tr>
+<tr>
+<td>Mordekaiser</td>
+<td>Phantom</td>
+<td>None</td>
+<td>Knight</td>
+</tr>
+<tr>
+<td>Nidalee</td>
+<td>Wild</td>
+<td>None</td>
+<td>Shapeshifter</td>
+</tr>
+<tr>
+<td>Tristana</td>
+<td>Yordle</td>
+<td>None</td>
+<td>Gunslinger</td>
+</tr>
+<tr>
+<td>Vayne</td>
+<td>Noble</td>
+<td>None</td>
+<td>Ranger</td>
+</tr>
+<tr>
+<td>Warwick</td>
+<td>Wild</td>
+<td>None</td>
+<td>Brawler</td>
 </tr>
 </tbody></table>
-<h2 id='4fun'>4fun</h2>
+<h2 id='tier-2'>Tier 2</h2>
 <table><thead>
 <tr>
 <th>Champion</th>
+<th>Origin</th>
+<th>Sub-Origin</th>
 <th>Class</th>
-<th>Subclass</th>
-<th>Sub-subclass</th>
 </tr>
 </thead><tbody>
 <tr>
+<td>Elise</td>
+<td>Demon</td>
+<td>None</td>
+<td>Shapeshifter</td>
+</tr>
+<tr>
+<td>Ahri</td>
+<td>Wild</td>
+<td>None</td>
+<td>Sorcerer</td>
+</tr>
+<tr>
+<td>Braum</td>
+<td>Glacial</td>
+<td>None</td>
+<td>Guardian</td>
+</tr>
+<tr>
+<td>Blitzcrank</td>
+<td>Robot</td>
+<td>None</td>
+<td>Brawler</td>
+</tr>
+<tr>
+<td>Pyke</td>
+<td>Pirate</td>
+<td>None</td>
+<td>Assassin</td>
+</tr>
+<tr>
+<td>Rek&#39;Sai</td>
+<td>Void</td>
+<td>None</td>
+<td>Brawler</td>
+</tr>
+<tr>
+<td>Lissandra</td>
+<td>Glacial</td>
+<td>None</td>
+<td>Elementalist</td>
+</tr>
+<tr>
+<td>Lucian</td>
+<td>Noble</td>
+<td>None</td>
+<td>Gunslinger</td>
+</tr>
+<tr>
+<td>Lulu</td>
+<td>Yordle</td>
+<td>None</td>
+<td>Sorcerer</td>
+</tr>
+<tr>
+<td>Twisted Fate</td>
+<td>Pirate</td>
+<td>None</td>
+<td>Sorcerer</td>
+</tr>
+<tr>
+<td>Shen</td>
+<td>Ninja</td>
+<td>None</td>
+<td>Blademaster</td>
+</tr>
+<tr>
+<td>Varus</td>
+<td>Demon</td>
+<td>None</td>
+<td>Ranger</td>
+</tr>
+<tr>
+<td>Zed</td>
+<td>Ninja</td>
+<td>None</td>
+<td>Assassin</td>
+</tr>
+</tbody></table>
+<h2 id='tier-3'>Tier 3</h2>
+<table><thead>
+<tr>
+<th>Champion</th>
+<th>Origin</th>
+<th>Sub-Origin</th>
+<th>Class</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Kennen</td>
+<td>Ninja</td>
+<td>Yordle</td>
+<td>Elementalist</td>
+</tr>
+<tr>
+<td>Katarina</td>
+<td>Imperial</td>
+<td>None</td>
+<td>Assassin</td>
+</tr>
+<tr>
+<td>Evelynn</td>
+<td>Demon</td>
+<td>None</td>
+<td>Assassin</td>
+</tr>
+<tr>
+<td>Gangplank</td>
+<td>Pirate</td>
+<td>Blademaster</td>
+<td>Gunslinger</td>
+</tr>
+<tr>
+<td>Ashe</td>
+<td>Glacial</td>
+<td>None</td>
+<td>Ranger</td>
+</tr>
+<tr>
+<td>Aatrox</td>
+<td>Demon</td>
+<td>None</td>
+<td>Blademaster</td>
+</tr>
+<tr>
+<td>Rengar</td>
+<td>Wild</td>
+<td>None</td>
+<td>Assassin</td>
+</tr>
+<tr>
+<td>Poppy</td>
+<td>Yordle</td>
+<td>None</td>
+<td>Knight</td>
+</tr>
+<tr>
+<td>Morgana</td>
+<td>Demon</td>
+<td>None</td>
+<td>Sorcerer</td>
+</tr>
+<tr>
+<td>Shyvana</td>
+<td>Dragon</td>
+<td>None</td>
+<td>Shapeshifter</td>
+</tr>
+<tr>
+<td>Veigar</td>
+<td>Yordle</td>
+<td>None</td>
+<td>Sorcerer</td>
+</tr>
+<tr>
+<td>Volibear</td>
+<td>Glacial</td>
+<td>None</td>
+<td>Brawler</td>
+</tr>
+</tbody></table>
+<h2 id='tier-4'>Tier 4</h2>
+<table><thead>
+<tr>
+<th>Champion</th>
+<th>Origin</th>
+<th>Sub-Origin</th>
+<th>Class</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Gnar</td>
+<td>Wild</td>
+<td>Yordle</td>
+<td>Shapeshifter</td>
+</tr>
+<tr>
 <td>Aurelion Sol</td>
 <td>Dragon</td>
-<td>Sorcerer</td>
 <td>None</td>
+<td>Sorcerer</td>
+</tr>
+<tr>
+<td>Akali</td>
+<td>Ninja</td>
+<td>None</td>
+<td>Assassin</td>
+</tr>
+<tr>
+<td>Brand</td>
+<td>Demon</td>
+<td>None</td>
+<td>Elementalist</td>
+</tr>
+<tr>
+<td>Cho&#39;Gath</td>
+<td>Void</td>
+<td>None</td>
+<td>Brawler</td>
+</tr>
+<tr>
+<td>Draven</td>
+<td>Imperial</td>
+<td>None</td>
+<td>Blademaster</td>
+</tr>
+<tr>
+<td>Leona</td>
+<td>Noble</td>
+<td>None</td>
+<td>Guardian</td>
+</tr>
+<tr>
+<td>Kindred</td>
+<td>Phantom</td>
+<td>None</td>
+<td>Ranger</td>
+</tr>
+<tr>
+<td>Sejuani</td>
+<td>Glacial</td>
+<td>None</td>
+<td>Knight</td>
+</tr>
+</tbody></table>
+<h2 id='tier-5'>Tier 5</h2>
+<table><thead>
+<tr>
+<th>Champion</th>
+<th>Origin</th>
+<th>Sub-Origin</th>
+<th>Class</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Kayle</td>
+<td>Noble</td>
+<td>None</td>
+<td>Knight</td>
+</tr>
+<tr>
+<td>Karthus</td>
+<td>Phantom</td>
+<td>None</td>
+<td>Sorcerer</td>
+</tr>
+<tr>
+<td>Anivia</td>
+<td>Glacial</td>
+<td>None</td>
+<td>Elementalist</td>
+</tr>
+<tr>
+<td>Miss Fortune</td>
+<td>Pirate</td>
+<td>None</td>
+<td>Gunslinger</td>
+</tr>
+<tr>
+<td>Swain</td>
+<td>Demon</td>
+<td>Imperial</td>
+<td>Shapeshifter</td>
+</tr>
+<tr>
+<td>Yasuo</td>
+<td>Exile</td>
+<td>None</td>
+<td>Blademaster</td>
 </tr>
 </tbody></table>
 
@@ -422,54 +686,128 @@ available | true | If set to false, the result will include kittens that have al
 ## Poppy
 ## Rek'Sai
 -->
-<h1 id='items'>Items</h1><h2 id='damage'>Damage</h2>
+<h1 id='items'>Items</h1>
 <table><thead>
 <tr>
-<th>Item</th>
-<th>Class</th>
-<th>Subclass</th>
-<th>Sub-subclass</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
 </tr>
 </thead><tbody>
+<tr>
+<td></td>
+<td>B.F. Sword</td>
+<td>Chain Vest</td>
+<td>Negatron Cloak</td>
+<td>Needlessly Large Rod</td>
+<td>Tear of the Goddess</td>
+<td>Giant&#39;s Belt</td>
+<td>Spatula</td>
+</tr>
 <tr>
 <td>B.F. Sword</td>
-<td>Dragon</td>
-<td>Sorcerer</td>
-<td>None</td>
-</tr>
-</tbody></table>
-<h2 id='armor'>Armor</h2>
-<table><thead>
-<tr>
-<th>Item</th>
-<th>Class</th>
-<th>Subclass</th>
-<th>Sub-subclass</th>
-</tr>
-</thead><tbody>
-<tr>
+<td>Recurve Bow</td>
 <td>Chain Vest</td>
-<td>Dragon</td>
-<td>Sorcerer</td>
-<td>None</td>
-</tr>
-</tbody></table>
-<h2 id='2fun'>2fun</h2>
-<table><thead>
-<tr>
-<th>Item</th>
-<th>Class</th>
-<th>Subclass</th>
-<th>Sub-subclass</th>
-</tr>
-</thead><tbody>
-<tr>
+<td>Negatron Cloak</td>
+<td>Needlessly Large Rod</td>
+<td>Tear of the Goddess</td>
+<td>Giant&#39;s Belt</td>
 <td>Spatula</td>
-<td>Dragon</td>
-<td>Sorcerer</td>
-<td>None</td>
+</tr>
+<tr>
+<td>B.F. Sword</td>
+<td>Recurve Bow</td>
+<td>Chain Vest</td>
+<td>Negatron Cloak</td>
+<td>Needlessly Large Rod</td>
+<td>Tear of the Goddess</td>
+<td>Giant&#39;s Belt</td>
+<td>Spatula</td>
+</tr>
+<tr>
+<td>B.F. Sword</td>
+<td>Recurve Bow</td>
+<td>Chain Vest</td>
+<td>Negatron Cloak</td>
+<td>Needlessly Large Rod</td>
+<td>Tear of the Goddess</td>
+<td>Giant&#39;s Belt</td>
+<td>Spatula</td>
+</tr>
+<tr>
+<td>B.F. Sword</td>
+<td>Recurve Bow</td>
+<td>Chain Vest</td>
+<td>Negatron Cloak</td>
+<td>Needlessly Large Rod</td>
+<td>Tear of the Goddess</td>
+<td>Giant&#39;s Belt</td>
+<td>Spatula</td>
+</tr>
+<tr>
+<td>B.F. Sword</td>
+<td>Recurve Bow</td>
+<td>Chain Vest</td>
+<td>Negatron Cloak</td>
+<td>Needlessly Large Rod</td>
+<td>Tear of the Goddess</td>
+<td>Giant&#39;s Belt</td>
+<td>Spatula</td>
+</tr>
+<tr>
+<td>B.F. Sword</td>
+<td>Recurve Bow</td>
+<td>Chain Vest</td>
+<td>Negatron Cloak</td>
+<td>Needlessly Large Rod</td>
+<td>Tear of the Goddess</td>
+<td>Giant&#39;s Belt</td>
+<td>Spatula</td>
+</tr>
+<tr>
+<td>B.F. Sword</td>
+<td>Recurve Bow</td>
+<td>Chain Vest</td>
+<td>Negatron Cloak</td>
+<td>Needlessly Large Rod</td>
+<td>Tear of the Goddess</td>
+<td>Giant&#39;s Belt</td>
+<td>Spatula</td>
 </tr>
 </tbody></table>
+<h1 id='links'>Links</h1>
+<p>Hafu.</p>
+
+<ul>
+<li><a href="https://www.youtube.com/channel/UCddX-H9xUwQH6jOOHuL2vYw">Youtube</a></li>
+</ul>
+
+<p>Scarra.</p>
+
+<ul>
+<li><a href="https://i.imgur.com/PwHNFou.jpg">Items</a></li>
+<li><a href="https://i.imgur.com/7wqGwwz.jpg">Champions</a></li>
+<li><a href="https://www.youtube.com/user/scarraofficial">Youtube</a></li>
+</ul>
+
+<p>Disguised Toast.</p>
+
+<ul>
+<li><a href="https://www.youtube.com/channel/UCUT8RoNBTJvwW1iErP6-b-A">Youtube</a></li>
+</ul>
+
+<p>EsportsObserver.</p>
+
+<ul>
+<li><a href="https://images.squarespace-cdn.com/content/v1/59af2189c534a58c97bd63b3/1562019828121-XZBB10P4E71HKVGRKXTM/ke17ZwdGBToddI8pDm48kJGvfNC1aUK2wbtVI1QZfA57gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UR5H7ucbaCh6ed8LHWsZBy-RaCZoInfaEpqKUEDgw8V5KL33-fhoxT1uJb4gA97vDg/Teamfight+Tactics+champion+pool+size+and+drop+rate.jpg?format=1500w">Champion Droprate</a></li>
+</ul>
+
+<script> Sortable.init() </script>
 
       </div>
       <div class="dark-box">
